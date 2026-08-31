@@ -419,7 +419,7 @@ Do not build:
 - TypeScript
 - Vite
 - React Router if needed
-- CSS Modules, Tailwind, or simple CSS
+- CSS Modules, Tailwind
 
 Choose one styling approach only.
 
