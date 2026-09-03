@@ -1,4 +1,4 @@
-# DealLens — Detailed Build Plan for Codex Agent
+# Shortlist — Detailed Build Plan for Codex Agent
 
 ## 0. Purpose of This Document
 
@@ -17,7 +17,7 @@ The goal is to build a focused enhancement that sits **after lead discovery** an
 
 Working product name:
 
-# DealLens — Acquisition Lead Decision Engine
+# Shortlist — Acquisition Lead Decision Engine
 
 ---
 
@@ -214,7 +214,7 @@ Other companies returned errors similar to:
 
 Therefore, enrichment is not guaranteed to succeed.
 
-The DealLens prototype should remain usable even when enrichment is:
+The Shortlist prototype should remain usable even when enrichment is:
 
 - missing,
 - low confidence,
@@ -235,9 +235,9 @@ The product already contains AI scoring with user-entered keyword groups:
 - Critical: exclude.
 - Ideal: lowers the score.
 
-This means DealLens must **not** be another generic keyword AI scoring feature.
+This means Shortlist must **not** be another generic keyword AI scoring feature.
 
-DealLens should solve a different problem:
+Shortlist should solve a different problem:
 
 > turning lead information into a research decision and next action.
 
@@ -278,9 +278,9 @@ This creates a second bottleneck after lead discovery.
 
 # 5. Proposed Solution
 
-## DealLens
+## Shortlist
 
-DealLens takes SaaSquatch-style lead data and creates an explainable research queue.
+Shortlist takes SaaSquatch-style lead data and creates an explainable research queue.
 
 It produces:
 
@@ -296,7 +296,7 @@ It produces:
 
 The important idea:
 
-> SaaSquatch finds companies. DealLens helps decide what to do with them.
+> SaaSquatch finds companies. Shortlist helps decide what to do with them.
 
 ---
 
@@ -344,7 +344,7 @@ Decide if worth further research
 Repeat
 ```
 
-## DealLens workflow
+## Shortlist workflow
 
 ```text
 Search results
@@ -895,7 +895,7 @@ Do not expose ugly backend error text as the main UI message.
 
 ## Missing AI scoring
 
-DealLens should not depend on external AI scoring.
+Shortlist should not depend on external AI scoring.
 
 If optional AI explanation fails:
 
@@ -1416,7 +1416,7 @@ Explain the post-discovery research bottleneck.
 
 ## 2. Solution
 
-Explain DealLens.
+Explain Shortlist.
 
 ## 3. Why this feature
 
@@ -1498,7 +1498,7 @@ SaaSquatch Search / Scraper
     Lead Event / API
           |
           v
-   DealLens Service
+   Shortlist Service
       |       |
       |       +--> Enrichment Adapters
       |
@@ -1635,7 +1635,7 @@ Explain architecture:
 
 Value statement:
 
-"DealLens reduces research effort by helping users enrich and investigate the leads most likely to matter."
+"Shortlist reduces research effort by helping users enrich and investigate the leads most likely to matter."
 
 ---
 
@@ -1742,6 +1742,6 @@ Do not proceed to scoring until the setup is confirmed working.
 
 Every implementation decision should support this sentence:
 
-> DealLens helps users decide which discovered companies deserve attention, which data they can trust, and what they should research next.
+> Shortlist helps users decide which discovered companies deserve attention, which data they can trust, and what they should research next.
 
 If a feature does not support that sentence, do not build it.

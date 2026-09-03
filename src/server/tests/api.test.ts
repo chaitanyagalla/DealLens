@@ -3,7 +3,7 @@ import { beforeEach, describe, expect, it } from "vitest";
 import { createApp } from "../app.js";
 import { LeadRepository } from "../repositories/lead.repository.js";
 
-describe("DealLens API", () => {
+describe("Shortlist API", () => {
   let repository: LeadRepository;
   let app: ReturnType<typeof createApp>;
 

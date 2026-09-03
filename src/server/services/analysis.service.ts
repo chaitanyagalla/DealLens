@@ -290,7 +290,6 @@ function chooseRecommendation(
   };
 }
 
-/** Produces the full, deterministic analysis consumed by both API views. */
 export function analyzeLead(
   lead: Lead,
   thesis: InvestmentThesis = demoInvestmentThesis,

@@ -18,7 +18,7 @@ function createUnrequestedEnrichment(): OptionalEnrichment {
   };
 }
 
-/** Maps the observed SaaSquatch response shape into DealLens's normalized lead model. */
+/** Maps the observed SaaSquatch response shape into Shortlist's normalized lead model. */
 export function adaptSaaSquatchSearchResponse(response: SaaSquatchSearchResponseDto): Lead[] {
   return response.results.map((result) => ({
     leadId: result.lead_id,
@@ -36,4 +36,3 @@ export function adaptSaaSquatchSearchResponse(response: SaaSquatchSearchResponse
     enrichment: createUnrequestedEnrichment(),
   }));
 }
-
